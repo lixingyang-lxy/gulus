@@ -1,0 +1,30 @@
+{
+  "id": "",
+  "name": "",
+  "font_family": "iconfont",
+  "css_prefix_text": "icon-",
+  "description": "",
+  "glyphs": [
+    {
+      "icon_id": "6154343",
+      "name": "pager-prev",
+      "font_class": "pager-prev",
+      "unicode": "e648",
+      "unicode_decimal": 58952
+    },
+    {
+      "icon_id": "6154345",
+      "name": "pager-next",
+      "font_class": "pager-next",
+      "unicode": "e649",
+      "unicode_decimal": 58953
+    },
+    {
+      "icon_id": "6154374",
+      "name": "setting",
+      "font_class": "setting",
+      "unicode": "e65c",
+      "unicode_decimal": 58972
+    }
+  ]
+}
