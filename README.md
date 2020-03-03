@@ -1,4 +1,4 @@
-# gulu-test
+# gulus
 
 ## Project setup
 ```
