@@ -1,6 +1,6 @@
 <template>
     <button class="g-button" @click="handleClick" :class="{ [`i-${iconPosition}`]: true }">
-        <g-icon class="icon" :name="name"></g-icon>
+        <g-icon class="icon" v-if="name != undefined" :name="name"></g-icon>
         <slot class="content"></slot>
     </button>
 </template>
@@ -23,7 +23,6 @@
             name: {
                 type: String,
                 require: true,
-                default: 'setting',
                 validate(value) {
                     return typeof value === String
                 }

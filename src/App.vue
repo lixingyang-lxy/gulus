@@ -4,7 +4,7 @@
             <div>左下载</div>
         </g-button>
 
-        <g-button :iconPosition="iconPositionRight" name="download">
+        <g-button :iconPosition="iconPositionRight" name="right">
             <div>右下载</div>
         </g-button>
 
@@ -12,17 +12,18 @@
             <div>设置</div>
         </g-button>
 
-        
         <button-group>
             <g-button name="left">
+                向左
             </g-button>
             <g-button>
                 更多...
             </g-button>
-            <g-button name="right">
+            <g-button name="right" :iconPosition="iconPositionRight">
+                向右
             </g-button>
         </button-group>
-
+         <button @click="change">change</button>
     </div>
 </template>
 
@@ -45,6 +46,9 @@
         methods: {
             handleClick() {
                 console.log('click')
+            },
+            change() {
+                this.$toast('err message', 'center')
             }
         }
     }
