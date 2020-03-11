@@ -1,4 +1,4 @@
-var Toast = {};
+var Toast = {}
 Toast.install = function (Vue, options) {
     let opt = {
         defaultType: 'center',
@@ -15,20 +15,20 @@ Toast.install = function (Vue, options) {
         let toastTpl = Vue.extend({
             template: `<div class="vue-toast toast-${opt.defaultType}">${tips}</div>`
         });
-        let tpl = new toastTpl().$mount().$el;
+        let tpl = new toastTpl().$mount().$el
 
-        document.body.appendChild((tpl));
+        document.body.appendChild((tpl))
         setTimeout(() => {
             document.body.removeChild(tpl)
         }, opt.duration)
-    };
+    }
     let position = ['botton', 'center', 'top'];
     position.forEach((type) => {
         Vue.prototype.$toast[type] = (tip) => {
             return Vue.prototype.$toast(tip, type)
         }
     })
-};
+}
 
 export default {
     Toast
