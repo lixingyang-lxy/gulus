@@ -19,7 +19,7 @@ Toast.install = function (Vue, options) {
 
         document.body.appendChild((tpl))
         setTimeout(() => {
-            document.body.removeChild(tpl)
+                 document.body.removeChild(tpl)
         }, opt.duration)
     }
     let position = ['botton', 'center', 'top'];
@@ -29,6 +29,7 @@ Toast.install = function (Vue, options) {
         }
     })
 }
+
 
 export default {
     Toast
