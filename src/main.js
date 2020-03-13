@@ -14,7 +14,6 @@ Vue.component('g-button-group', ButtonGroup)
 Vue.config.productionTip = false
 
 Vue.filter('filter', function (value) {
-  debugger
     console.log(value)
 })
 

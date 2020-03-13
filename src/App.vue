@@ -13,7 +13,7 @@
         </g-button>
 
         
-        <button-group>
+        <g-button-group>
             <g-button name="left">
             </g-button>
             <g-button>
@@ -21,14 +21,12 @@
             </g-button>
             <g-button name="right">
             </g-button>
-        </button-group>
+        </g-button-group>
 
     </div>
 </template>
 
 <script>
-    import Button from './buttons'
-    import ButtonGroup from './button-group'
 
     export default {
         name: 'App',
@@ -39,8 +37,6 @@
           }
         },
         components: {
-            'g-button': Button,
-            'button-group': ButtonGroup
         },
         methods: {
             handleClick() {
