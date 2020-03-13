@@ -9,6 +9,7 @@ Vue.use(Toast)
 
 //全局注册icon-svg
 Vue.component('g-icon', Icon)
+
 Vue.config.productionTip = false
 
 new Vue({
