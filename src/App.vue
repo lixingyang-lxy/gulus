@@ -12,7 +12,6 @@
             <div>设置</div>
         </g-button>
 
-        
         <g-button-group>
             <g-button name="left">
             </g-button>
@@ -22,7 +21,18 @@
             <g-button name="right">
             </g-button>
         </g-button-group>
-
+        <g-tabs>
+            <g-tabs-head>
+                <g-tabs-item name="tab1">美女</g-tabs-item>
+                <g-tabs-item name="tab2">野兽</g-tabs-item>
+                <g-tabs-item name="tab3">王子</g-tabs-item>
+            </g-tabs-head>
+            <g-tabs-body>
+                <g-tabs-pane name="tab1">beauty</g-tabs-pane>
+                <g-tabs-pane name="tab2">crazy</g-tabs-pane>
+                <g-tabs-pane name="tab3">pean</g-tabs-pane>
+            </g-tabs-body>
+        </g-tabs>
     </div>
 </template>
 

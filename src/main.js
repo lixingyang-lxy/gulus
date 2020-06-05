@@ -2,6 +2,11 @@ import Vue from 'vue'
 import App from './App.vue'
 import Button from './buttons'
 import ButtonGroup from './button-group'
+import Tabs from './tabs'
+import TabsBody from './tabs-body'
+import TabsHeader from './tabs-header'
+import TabsItem from './tabs-item'
+import TabsPane from './tabs-pane'
 //引入svg组件
 import Icon from './icon'
 import chai from 'chai'
@@ -11,6 +16,11 @@ import filter from './utils/filter'
 Vue.component('g-icon', Icon)
 Vue.component('g-button', Button)
 Vue.component('g-button-group', ButtonGroup)
+Vue.component('g-tabs', Tabs)
+Vue.component('g-tabs-body', TabsBody)
+Vue.component('g-tabs-header', TabsHeader)
+Vue.component('g-tabs-item', TabsItem)
+Vue.component('g-tabs-pane', TabsPane)
 Vue.config.productionTip = false
 
 Vue.filter('filter', function (value) {
