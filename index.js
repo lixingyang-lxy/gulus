@@ -1,4 +1,4 @@
-import Button from './src/buttons'
+import Button from './src/button/buttons'
 import Icon from './src/icon'
 
 
