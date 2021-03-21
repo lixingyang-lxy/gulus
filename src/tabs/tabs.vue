@@ -1,17 +1,16 @@
 <template>
-    <div class="tabs">
-        <slot></slot>
-    </div>
+  <div class="tabs">
+    <slot></slot>
+  </div>
 </template>
 
 <script>
-    export default {
-        name: "tabs"
-    }
+export default {
+  name: "tabs",
+};
 </script>
 
 <style scoped lang="less">
-    .tabs {
-
-    }
+.tabs {
+}
 </style>

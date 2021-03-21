@@ -1,68 +1,66 @@
 <template>
-    <div id="app">
-        <g-button :iconPosition="iconPositionLeft" name="download" @click="handleClick">
-            <div>左下载</div>
-        </g-button>
+  <div id="app">
+    <g-button
+      :iconPosition="iconPositionLeft"
+      name="download"
+      @click="handleClick"
+    >
+      <div>左下载</div>
+    </g-button>
 
-        <g-button :iconPosition="iconPositionRight" name="download">
-            <div>右下载</div>
-        </g-button>
+    <g-button :iconPosition="iconPositionRight" name="download">
+      <div>右下载</div>
+    </g-button>
 
-        <g-button name="setting">
-            <div>设置</div>
-        </g-button>
+    <g-button name="setting">
+      <div>设置</div>
+    </g-button>
 
-        <g-button-group>
-            <g-button name="left">
-            </g-button>
-            <g-button>
-                更多...
-            </g-button>
-            <g-button name="right">
-            </g-button>
-        </g-button-group>
-        <g-tabs>
-            <g-tabs-head>
-                <g-tabs-item name="tab1">美女</g-tabs-item>
-                <g-tabs-item name="tab2">野兽</g-tabs-item>
-                <g-tabs-item name="tab3">王子</g-tabs-item>
-            </g-tabs-head>
-            <g-tabs-body>
-                <g-tabs-pane name="tab1">beauty</g-tabs-pane>
-                <g-tabs-pane name="tab2">crazy</g-tabs-pane>
-                <g-tabs-pane name="tab3">pean</g-tabs-pane>
-            </g-tabs-body>
-        </g-tabs>
-    </div>
+    <g-button-group>
+      <g-button name="left"> </g-button>
+      <g-button> 更多... </g-button>
+      <g-button name="right"> </g-button>
+    </g-button-group>
+    <g-tabs>
+      <g-tabs-head>
+        <g-tabs-item name="tab1">美女</g-tabs-item>
+        <g-tabs-item name="tab2">野兽</g-tabs-item>
+        <g-tabs-item name="tab3">王子</g-tabs-item>
+      </g-tabs-head>
+      <g-tabs-body>
+        <g-tabs-pane name="tab1">beauty</g-tabs-pane>
+        <g-tabs-pane name="tab2">crazy</g-tabs-pane>
+        <g-tabs-pane name="tab3">pean</g-tabs-pane>
+      </g-tabs-body>
+    </g-tabs>
+  </div>
 </template>
 
 <script>
-
-    export default {
-        name: 'App',
-        data() {
-          return {
-              iconPositionLeft: 'left',
-              iconPositionRight: 'right'
-          }
-        },
-        components: {
-        },
-        methods: {
-            handleClick() {
-                console.log('click')
-            }
-        }
-    }
+export default {
+  name: "App",
+  data() {
+    return {
+      iconPositionLeft: "left",
+      iconPositionRight: "right",
+    };
+  },
+  components: {},
+  methods: {
+    handleClick() {
+      console.log("click");
+    },
+  },
+};
 </script>
 
 <style>
-    #app {
-        font-family: Avenir, Helvetica, Arial, sans-serif;
-        -webkit-font-smoothing: antialiased;
-        -moz-osx-font-smoothing: grayscale;
-        text-align: center;
-        color: #2c3e50;
-        margin-top: 60px;
-    }
+#app {
+  font-family: Avenir, Helvetica, Arial, sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  text-align: center;
+  color: #2c3e50;
+  margin-top: 60px;
+}
 </style>
